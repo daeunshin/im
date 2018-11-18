@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I'm a Feminist</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body{background:black;}
+
+		.slidecontainer{ position: absolute; width: 800px; left:calc(50% - 400px); }
+		.slider{
+			-webkit-appearance:none; width: 100%; height: 5px; background:#d3d3d3; outline: none;}
+		
+		.slider::-webkit-slider-thumb {
+			-webkit-appearance:none; 
+			appearance:none; 
+			width: 25px; 
+			height: 25px; 
+			background: black; 
+			cursor: pointer; 
+			border-radius: 50%;
+			border-style: solid;
+			border-color: white;
+		}
+
+		.slider::-moz-range-thumb {
+			width: 25px; 
+			height: 25px; 
+			background: white; 
+			cursor: pointer; 
+		}
+
+		#imimgcontainer{width: 800px; padding: 0;}
+
+		.imimg{width: 100%; padding-top: 60px;}
+
+	</style>
+</head>
+<body>
+	<h1 style="color: white;">blablalala</h1>
+	<div class="slidecontainer">
+		<dir id="imimgcontainer">
+
+			
+			<img src="./im/im1.png" class="imimg" id="imimg1">
+			<img src="./im/im2.png" class="imimg" id="imimg2">
+			<img src="./im/im3.png" class="imimg" id="imimg3">
+			<img src="./im/im4.png" class="imimg" id="imimg4">
+			<img src="./im/im6.png" class="imimg" id="imimg5">
+			<img src="./im/im7.png" class="imimg" id="imimg6">
+			<img src="./im/im5.png" class="imimg" id="imimg7">
+			<img src="./im/im8.png" class="imimg" id="imimg8">
+			<img src="./im/im9.png" class="imimg">
+			<img src="./im/im10.png" class="imimg">
+			<img src="./im/im11.png" class="imimg">
+			<img src="./im/im12.png" class="imimg">
+			<img src="./im/im13.png" class="imimg">
+			<img src="./im/im14.png" class="imimg">
+			<img src="./im/im15.png" class="imimg">
+			<img src="./im/im16.png" class="imimg">
+			<img src="./im/im17.png" class="imimg">
+			<img src="./im/im18.png" class="imimg">
+			<img src="./im/im19.png" class="imimg">
+			<img src="./im/im20.png" class="imimg">
+			<img src="./im/im21.png" class="imimg">
+			<img src="./im/im22.png" class="imimg">
+		
+		</dir>
+		<input type="range" min="1" max="22" value="1" class="slider" id="myRange">
+		<p style="color: white">Value <span id="demo"></span></p>
+	</div>
+
+
+	<script>
+		var slider = document.getElementById("myRange");
+		var output = document.getElementById("demo");
+		output.innerHTML = slider.value;
+
+		slider.oninput = function() {
+			output.innerHTML = this.value;
+		}
+
+		
+		function value() {
+			var valuenumber = document.getElementById("myRange").value;
+			
+			if (valuenumber === "2"){
+				imimg1.style.opacity = "1";
+				imimg2.style.opacity = "0";
+				imimg3.style.opacity = "0";
+			}
+		}
+
+
+
+
+
+	</script>
+</body>
+</html>
